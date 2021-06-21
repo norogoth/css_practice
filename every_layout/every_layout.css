@@ -1,0 +1,23 @@
+:root {
+    --font-plain: Helvetica Neue,Helvetica,Arial,sans-serif;
+    --font-special: Barlow Condensed,Helvetica,sans-serif;
+}
+
+* {
+    font-family: var(--font-plain);
+}
+
+h1, h2, h3 {
+    font-family: var(--font-special);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-column-gap: 2rem;
+    height: 100%
+}
+
+.sidebar {
+    border-right: 3px dashed;
+}
