@@ -1,46 +1,68 @@
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="every_layout.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:400,500,700" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <div class="grid-container">
-        <div class="sidebar">
-        <div class="logo">
-            logo would go here. if_there_was_one.jpeg
-        </div>
-        <div class="rudiments">
-            <h2>Rudiments</h2>
-            <ul class="rudiment-list">
-            <li>Boxes</li>
-            <li>Composition</li>
-            <li>Units</li>
-            <li>Global and local styling</li>
-            <li>Modular scale</li>
-            <li>Axioms</li>
-            </ul>
-        </div>
-        <div class="layouts">
-            <h2>Layouts</h2>
-            <div class="picture-layout">
-            <img/>
-            <p>Picture Index</p>
+      <div class="responsiveHeader" hidden>
+            <div class="logoDiv">
+                <img class="logo" src ="./logo.png">
             </div>
-            <ul class="layout-list">
-            <li>The Stack</li>
-            <li>Composition</li>
-            <li>Units</li>
-            <li>Global and local styling</li>
-            <li>Modular scale</li>
-            <li>Axioms</li>
-            </ul>
+        <div class="hamburgerDiv">
+            <label for="hamburger">&#9776;</label>
+            <input type="checkbox" id="hamburger"/>
+            <span><h3 id="menuLabel">Menu</h3></span>
         </div>
+      </div>
+    <div class="grid-container">
+        <div class="sidebarDiv">
+            <div class="sidebar-content">
+                <div class="logoDiv">
+                    <img class="logo" src ="./logo.png">
+                </div>
+                <div class="rudiments">
+                    <h2>RUDIMENTS</h2>
+                    <ul class="rudiment-list">
+                    <li class="list-item">Boxes</li>
+                    <li class="list-item">Composition</li>
+                    <li class="list-item">Units</li>
+                    <li class="list-item">Global and local styling</li>
+                    <li class="list-item">Modular scale</li>
+                    <li class="list-item">Axioms</li>
+                    </ul>
+                </div>
+                <div class="layouts">
+                    <h2>LAYOUTS</h2>
+                    <div class="picture-layout">
+                    <img/>
+                    <p>Picture Index</p>
+                    </div>
+                    <ul class="layout-list">
+                    <li class="list-item">The Stack</li>
+                    <li class="list-item">The Box</li>
+                    <li class="list-item">The Center<li>
+                    <li class="list-item">The Cluster</li>
+                    <li class="list-item">The Sidebar</li>
+                    <li class="list-item">The Switcher</li>
+                    <li class="list-item">The Cover</li>
+                    <li class="list-item">The Grid</li>
+                    <li class="list-item">The Frame</li>
+                    <li class="list-item">The Reel</li>
+                    <li class="list-item">The Imposter</li>
+                    </ul>
+                </div>
+            </div>
         </div>
         <div class="main-section">
-            <div class="text">
-                <h1>Boxes</h1>
-                <p>lorem ipsum</p>
-                <h1>The Box Model</h1>
-                <p>dolor sit amet</p>
+            <div class="main-content">
+                <div class="text">
+                    <h1>Boxes</h1>
+                    <p>As Rachel Andrew has reminded us, everything in web design is a box, or the absence of a box. Not everything necessarily looks like a box—border-radius, clip-path, and transforms can be deceptive, but everything takes up a box-like space. Layout is inevitably, therefore, the arrangement of boxes.
+
+    Before one can embark on combining boxes to make composite layouts, it is important to be familiar with how boxes themselves are designed to behave as standard.</p>
+                    <h2>The Box Model</h2>
+                    <p>The box model is the formula upon which layout boxes are based, and comprises content, padding, border, and margin. CSS lets us alter these values to change the overall size and shape of elements’ display.</p>
+                </div>
             </div>
         </div>
     </div>

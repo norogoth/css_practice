@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Barlow Condensed';
+    src: url('');
+}
+
 :root {
     --font-plain: Helvetica Neue,Helvetica,Arial,sans-serif;
     --font-special: Barlow Condensed,Helvetica,sans-serif;
@@ -7,17 +12,131 @@
     font-family: var(--font-plain);
 }
 
+h1 {
+    font-size: 60pt;
+}
+
+h2 {
+    font-size: 30pt;
+}
+
 h1, h2, h3 {
     font-family: var(--font-special);
+    font-weight: 700;
 }
 
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 3fr;
-    grid-column-gap: 2rem;
     height: 100%
 }
 
-.sidebar {
+.sidebarDiv {
     border-right: 3px dashed;
+    font-family: var(--font-special);
+    display: flex;
+    justify-content: space-around;
+}
+
+.rudiments, .layouts {
+    text-align: center;
+}
+
+.rudiments > ul, .layouts > ul {
+    list-style-type: none;
+}
+
+.list-item {
+    font-weight: bold;
+    font-size: 15pt;
+    justify-content: center;
+    margin-top: .5rem;
+    max-width: 150px;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: auto;
+}
+
+p {
+    line-height: 2rem;
+    font-size: 15pt;
+}
+
+.logoDiv {
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo {
+}
+
+.main-content, .sidebar-content {
+    margin-top: 5vw;
+}
+
+.sidebar-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    width: 80%;
+    margin-top: 0;
+}
+
+.main-section {
+    display: flex;
+    justify-content: space-around;
+}
+
+.hamburgerDiv {
+
+}
+
+
+
+@media screen and (max-width: 800px) {
+    .sidebarDiv{
+        display: none;
+    }
+
+    #menuLabel {
+        position: relative;
+        bottom: 2px;
+        display: inline;
+    }
+
+    .responsiveHeader {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        visibility: visible;
+    }
+
+    .hamburgerDiv {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        background: rgb(0,0,0);
+        color: rgb(255,255,255);
+        padding: 1rem;
+        width: 90%;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .logoDiv {
+        margin: 1rem;
+    }
+
+    .hamburgerDiv input:checked ~ .sidebarDiv {
+        display: block;
+    }
 }
